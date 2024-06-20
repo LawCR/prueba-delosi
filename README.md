@@ -52,6 +52,8 @@ Esta aplicación incluye pruebas unitarias para asegurar la funcionalidad correc
    npm install
    ```
 
+2. Crear una copia del ```.env.template```  y renombrarlo a ```.env``` y cambiar las variables de entorno
+
 ### Ejecución del Proyecto
 
 Para ejecutar la aplicación en modo de desarrollo:
