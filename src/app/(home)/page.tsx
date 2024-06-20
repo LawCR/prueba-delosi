@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div>
+    <>
       <Title title='Matriz NxN' subtitle='Ejercicio de Matriz' />
 
       <MatrixContainer />
-    </div>
+    </>
   );
 }

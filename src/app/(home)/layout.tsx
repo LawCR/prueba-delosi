@@ -8,7 +8,7 @@ export default function HomeLayout({
   return (
     <main className='flex flex-col min-h-screen w-full '>
       <TopMenu />
-        <main className='flex-1 p-4 sm:py-4 md:px-6 overflow-x-auto'>
+        <main className='flex-1 p-4 md:px-6 overflow-x-auto'>
           {children}
         </main>
       <Footer />
