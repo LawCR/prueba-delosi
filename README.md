@@ -43,7 +43,7 @@ Esta aplicación incluye pruebas unitarias para asegurar la funcionalidad correc
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/LawCR/prueba-delosi
    cd tu_repositorio
    ```
 
