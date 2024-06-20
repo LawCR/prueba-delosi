@@ -5,17 +5,7 @@ import { MatrixOutput } from '../matrix-output/MatrixOutput';
 import { MatrixButtons } from '../matrix-buttons/MatrixButtons';
 import { MatrixInput } from '../matrix-input/MatrixInput';
 import { Arrow } from '@/icons';
-
-const rotateMatrix = (matrix: number[][]): number[][] => {
-  const N = matrix.length;
-  const rotatedMatrix = Array.from({ length: N }, () => Array(N).fill(0));
-  for (let i = 0; i < N; i++) {
-    for (let j = 0; j < N; j++) {
-      rotatedMatrix[N - j - 1][i] = matrix[i][j];
-    }
-  }
-  return rotatedMatrix;
-};
+import { rotateMatrix } from '../../utils/rotateMatrix';
 
 export const MatrixContainer = () => {
   const initialMatrix = [
@@ -46,7 +36,6 @@ export const MatrixContainer = () => {
           matrixValues={matrixValues}
           setMatrixValues={setMatrixValues}
           matrixSize={matrixSize}
-          setMatrixSize={setMatrixSize}
         />
         <div className='rotate-90 sm:rotate-0'>
           <Arrow />

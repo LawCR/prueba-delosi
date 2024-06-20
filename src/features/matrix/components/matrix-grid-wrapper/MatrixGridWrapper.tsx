@@ -15,8 +15,7 @@ export const MatrixGridWrapper = ({
 
   return (
     <div className='w-full md:w-auto'>
-    {/* <div className='w-full flex flex-col items-center'> */}
-      <h2 className='text-lg font-semibold  mb-2'>{title}</h2>
+      <h2 className='text-lg font-semibold mb-2'>{title}</h2>
       <div className='mb-4'>
         <p
           style={{ maxWidth: matrixSize * matrixWidth }}
@@ -26,7 +25,7 @@ export const MatrixGridWrapper = ({
         </p>
       </div>
       <div
-        // className='grid sm:justify-center gap-[2px]'
+        role='grid'
         className='grid gap-[2px]'
         style={{
           gridTemplateColumns: `repeat(${matrixSize}, ${matrixWidth}px)`,

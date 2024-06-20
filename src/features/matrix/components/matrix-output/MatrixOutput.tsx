@@ -18,7 +18,7 @@ export const MatrixOutput = ({ matrixValues, matrixSize }: Props) => {
         {matrixValues.map((row, i) =>
           row.map((col, j) => (
             <input
-              key={`matrix-${i}-${j}`}
+              key={`matrix-rotated-${i}-${j}`}
               type='number'
               value={col}
               placeholder='0'

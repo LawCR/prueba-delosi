@@ -19,6 +19,7 @@ export const MatrixButtons = ({
 
   const incrementSize = () => {
     const newSize = matrixSize + 1;
+    // Creando una nueva matriz con el nuevo tamaño
     const newMatrix = Array.from({ length: newSize }, (_, i) =>
       Array.from({ length: newSize }, (_, j) => matrixValues[i]?.[j] || 0)
     );
@@ -30,8 +31,8 @@ export const MatrixButtons = ({
     if (matrixSize > minSize) {
       const newSize = matrixSize - 1;
       const newMatrix = matrixValues
-        .slice(0, newSize)
-        .map((row) => row.slice(0, newSize));
+        .slice(0, newSize) // Removiendo filas
+        .map((row) => row.slice(0, newSize)); // Removiendo columnas
       setMatrixValues(newMatrix);
       setMatrixSize(newSize);
     }

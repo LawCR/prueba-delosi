@@ -6,7 +6,6 @@ interface Props {
   matrixValues: number[][];
   setMatrixValues: React.Dispatch<React.SetStateAction<number[][]>>;
   matrixSize: number;
-  setMatrixSize: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export const MatrixInput = ({
@@ -38,8 +37,8 @@ export const MatrixInput = ({
               value={col}
               onChange={(e) => handleChange(i, j, e.target.value)}
               onFocus={(e) => e.target.select()}
-              placeholder='valor'
-              className='border p-2 text-center hover:bg-gray-100 focus:outline-none focus:ring-2  focus:border-transparent select-all'
+              placeholder='0'
+              className='border p-2 text-center hover:bg-gray-100 focus:outline-none focus:ring-2  focus:border-transparent'
             />
           ))
         )}
