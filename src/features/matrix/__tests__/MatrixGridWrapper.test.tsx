@@ -56,7 +56,7 @@ describe('Testing MatrixGridWrapper Component', () => {
       </MatrixGridWrapper>
     );
 
-    const gridElement = screen.getByRole('grid');
+    const gridElement = screen.getByLabelText('matrix-grid');
     // screen.debug(gridElement);
     expect(gridElement).toHaveStyle({
       gridTemplateColumns: `repeat(${matrixSize}, 75px)`,

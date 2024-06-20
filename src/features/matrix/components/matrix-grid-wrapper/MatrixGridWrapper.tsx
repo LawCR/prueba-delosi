@@ -25,7 +25,8 @@ export const MatrixGridWrapper = ({
         </p>
       </div>
       <div
-        role='grid'
+        // role='grid'
+        aria-label='matrix-grid'
         className='grid gap-[2px]'
         style={{
           gridTemplateColumns: `repeat(${matrixSize}, ${matrixWidth}px)`,
