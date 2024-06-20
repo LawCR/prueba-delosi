@@ -44,7 +44,7 @@ Esta aplicación incluye pruebas unitarias para asegurar la funcionalidad correc
 
    ```bash
    git clone https://github.com/LawCR/prueba-delosi
-   cd tu_repositorio
+   cd prueba-delosi
    ```
 
 2. Instala las dependencias del proyecto:
@@ -72,3 +72,11 @@ npm run test:watch
 ```
 Las pruebas están configuradas con Jest y React Testing Library, y cubren la funcionalidad principal de los componentes de la aplicación.
 
+### Ejecución del Proyecto en Producción
+
+Para ejecutar la aplicación en modo de desarrollo:
+
+```bash
+npm run build
+npm start
+```
